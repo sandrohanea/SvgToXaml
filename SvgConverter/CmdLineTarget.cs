@@ -31,7 +31,7 @@ namespace SvgConverter
             [ArgumentParam(DefaultValue = false, ExplicitNeeded = false, LongDesc = "If true, PixelsPerDip is filtered to ensure compatibility for < 4.6.2, default: false")]
             bool filterPixelsPerDip = false,
             [ArgumentParam(DefaultValue = false, ExplicitNeeded = false, LongDesc = "Recursive goes through inputdir subfolders")]
-            bool handleSubFolders = false
+            bool handleSubFolders = false,
             [ArgumentParam(DefaultValue = null, ExplicitNeeded = false, LongDesc = "Extract child elements into separate resources, default true" )]
             bool extractChildElements = true,
             [ArgumentParam(DefaultValue = null, ExplicitNeeded = false, LongDesc = "If true will not use hardcoded Brush values but rather a binding to SvgConvertedImageSourceBehavior that can be used to dynamically set the image color. Set this behavior on Images. Use together with extractChildElements:false.", ExplicitWantedArguments = "extractChildElements")]
